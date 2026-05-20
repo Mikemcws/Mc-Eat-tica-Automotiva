@@ -1,64 +1,57 @@
-const ctx = document.getElementById('revenueChart');
+/* =========================
+FILE: script.js
+========================= */
 
-new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: [
-      'Jan',
-      'Fev',
-      'Mar',
-      'Abr',
-      'Mai',
-      'Jun'
-    ],
-    datasets: [{
-      label: 'Faturamento',
-      data: [
-        12000,
-        19000,
-        15000,
-        22000,
-        18000,
-        26000
-      ],
-      borderColor: '#d4af37',
-      backgroundColor: 'rgba(212,175,55,0.1)',
-      tension: 0.4,
-      fill: true,
-      pointBackgroundColor:'#d4af37',
-      pointRadius:5
-    }]
-  },
+const menuBtn = document.getElementById("menu-btn");
+const nav = document.getElementById("nav");
 
-  options: {
-    responsive:true,
-
-    plugins:{
-      legend:{
-        labels:{
-          color:'#fff'
-        }
-      }
-    },
-
-    scales:{
-      x:{
-        ticks:{
-          color:'#aaa'
-        },
-        grid:{
-          color:'rgba(255,255,255,0.05)'
-        }
-      },
-
-      y:{
-        ticks:{
-          color:'#aaa'
-        },
-        grid:{
-          color:'rgba(255,255,255,0.05)'
-        }
-      }
-    }
-  }
+menuBtn.addEventListener("click", () => {
+  nav.classList.toggle("active");
 });
+
+/* HEADER SCROLL EFFECT */
+
+window.addEventListener("scroll", () => {
+
+  const header = document.querySelector(".header");
+
+  if(window.scrollY > 50){
+    header.style.background = "#000";
+  } else{
+    header.style.background = "rgba(0,0,0,0.4)";
+  }
+
+});
+
+/* SIMPLE REVEAL ANIMATION */
+
+const revealElements = document.querySelectorAll(
+  ".service-card, .gallery-item, .about-content, .about-image"
+);
+
+function revealOnScroll(){
+
+  const triggerBottom = window.innerHeight * 0.85;
+
+  revealElements.forEach((element)=>{
+
+    const elementTop = element.getBoundingClientRect().top;
+
+    if(elementTop < triggerBottom){
+      element.style.opacity = "1";
+      element.style.transform = "translateY(0)";
+    }
+
+  });
+
+}
+
+revealElements.forEach((element)=>{
+  element.style.opacity = "0";
+  element.style.transform = "translateY(50px)";
+  element.style.transition = "all 0.8s ease";
+});
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
