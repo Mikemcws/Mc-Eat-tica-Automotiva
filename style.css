@@ -53,12 +53,12 @@ HEADER
   width:100%;
   top:0;
   left:0;
-  padding:20px 8%;
+  padding:10px 8%;
   display:flex;
   justify-content:space-between;
   align-items:center;
   z-index:1000;
-  background:rgba(0,0,0,0.4);
+  background:rgba(199, 195, 195, 0.4);
   backdrop-filter:blur(10px);
 }
 
@@ -96,20 +96,36 @@ HEADER
 HERO
 ========================= */
 
-.hero{
-  position:relative;
-  height:100vh;
-  background:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1400&auto=format&fit=crop')
-  center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  padding:0 8%;
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('./Fundo.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+  rgba(0, 0, 0, 0.829); /* preto com 50% de opacidade */
+  z-index: 1; /* ficar abaixo do texto */
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2; /* conteúdo acima do overlay */
 }
 
 .overlay{
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,0.65);
+  background:rgba(0, 0, 0, 0.603);
 }
 
 .hero-content{
