@@ -7,24 +7,21 @@
   <title>MFM Estética Automotiva</title>
 
   <!-- CSS -->
-
   <link rel="stylesheet" href="style.css">
 
   <!-- FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  
-  
-  <header class="header">
 
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
     <div class="logo">
       MFM <span>Estética Automotiva</span>
     </div>
@@ -40,26 +37,428 @@
     <div class="menu-btn" id="menu-btn">
       <i class="fa-solid fa-bars"></i>
     </div>
-
   </header>
 
-  <section class="fundo hero" id="home">
+  <!-- ========== HERO ========== -->
+  <section class="hero fundo" id="home">
     <div class="hero-content">
-      <h1>Bem-vindo à MFM Estética Automotiva</h1>
+      <span class="hero-badge">Franca — SP</span>
+      <h1>Bem-vindo à <br><strong>MFM Estética</strong><br>Automotiva</h1>
       <p>Cada detalhe importa! Deixe seu carro impecável com a gente.</p>
-      <a href="#services" class="btn">Conheça nossos serviços</a>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Agendar agora</a>
+        <a href="#services" class="btn btn-outline">Nossos serviços</a>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats">
+    <div class="stat-item">
+      <span class="stat-num">500+</span>
+      <span class="stat-label">Carros atendidos</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">5★</span>
+      <span class="stat-label">Avaliação média</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">3+</span>
+      <span class="stat-label">Anos de experiência</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">100%</span>
+      <span class="stat-label">Clientes satisfeitos</span>
     </div>
   </section>
-    </nav>
 
+  <!-- ========== SERVICES ========== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub">O que oferecemos</span>
+        <h2 class="section-title">Nossos <span>Serviços</span></h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <h3>Lavagem Detalhada</h3>
+          <p>Limpeza completa interior e exterior com produtos premium de alta qualidade.</p>
+          <span class="service-price">A partir de R$ 80</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Vitrificação</h3>
+          <p>Proteção cerâmica de longa duração para a pintura do seu veículo.</p>
+          <span class="service-price">A partir de R$ 800</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>Polimento</h3>
+          <p>Remoção de riscos, hologramas e oxidação com resultado impecável.</p>
+          <span class="service-price">A partir de R$ 300</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <h3>Higienização Interna</h3>
+          <p>Limpeza profunda dos estofados, carpetes e todas as superfícies internas.</p>
+          <span class="service-price">A partir de R$ 150</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-film"></i>
+          </div>
+          <h3>Película PPF</h3>
+          <p>Proteção transparente contra arranhões e impactos de pedras na estrada.</p>
+          <span class="service-price">Sob consulta</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3>Cristalização</h3>
+          <p>Brilho intenso e proteção dos vidros contra chuva ácida e sujeira.</p>
+          <span class="service-price">A partir de R$ 120</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section section-dark" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-text">
+          <span class="section-sub">Quem somos</span>
+          <h2 class="section-title">Sobre a <span>MFM</span></h2>
+          <p>A <strong>MFM Estética Automotiva</strong> nasceu da paixão por carros e pelo trabalho bem-feito. Atuamos em Franca com o compromisso de entregar não apenas um serviço, mas uma experiência que supera as expectativas.</p>
+          <p>Utilizamos produtos de alta qualidade e técnicas profissionais para garantir que cada veículo saia da nossa oficina impecável. Cada detalhe é tratado com cuidado e dedicação.</p>
+
+          <ul class="diferenciais">
+            <li><i class="fa-solid fa-check"></i> Produtos premium importados</li>
+            <li><i class="fa-solid fa-check"></i> Equipe treinada e especializada</li>
+            <li><i class="fa-solid fa-check"></i> Atendimento personalizado</li>
+            <li><i class="fa-solid fa-check"></i> Agendamento flexível</li>
+            <li><i class="fa-solid fa-check"></i> Garantia nos serviços realizados</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary" style="margin-top: 2rem; display: inline-block;">Fale conosco</a>
+        </div>
+
+        <div class="about-numbers">
+          <div class="about-num-item">
+            <span class="num">500+</span>
+            <span class="desc">Veículos atendidos desde a inauguração</span>
+          </div>
+          <div class="about-num-item">
+            <span class="num">100%</span>
+            <span class="desc">Clientes satisfeitos com o resultado</span>
+          </div>
+          <div class="about-num-item">
+            <span class="num">3+</span>
+            <span class="desc">Anos de atuação no mercado de Franca</span>
+          </div>
+          <div class="about-num-item">
+            <span class="num">5★</span>
+            <span class="desc">Avaliação média no Google e Instagram</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub">Nosso trabalho</span>
+        <h2 class="section-title">Gale<span>ria</span></h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-image"></i>
+            <span>Foto do trabalho 1</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-image"></i>
+            <span>Foto do trabalho 2</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-image"></i>
+            <span>Foto do trabalho 3</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-image"></i>
+            <span>Foto do trabalho 4</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-image"></i>
+            <span>Foto do trabalho 5</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-image"></i>
+            <span>Foto do trabalho 6</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="gallery-note">
+        <i class="fa-brands fa-instagram"></i>
+        Siga no Instagram para ver mais: <a href="https://instagram.com" target="_blank">@mfmestetica</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== DEPOIMENTOS ========== -->
+  <section class="depoimentos section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub">O que dizem</span>
+        <h2 class="section-title">Depoi<span>mentos</span></h2>
+      </div>
+
+      <div class="dep-grid">
+
+        <div class="dep-card">
+          <div class="stars">★★★★★</div>
+          <p>"Polimento incrível! Meu carro voltou a parecer zero quilômetro. Recomendo demais o trabalho da MFM."</p>
+          <div class="dep-author">
+            <div class="dep-avatar">RC</div>
+            <div>
+              <strong>Rafael C.</strong>
+              <span>Honda Civic 2021</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card">
+          <div class="stars">★★★★★</div>
+          <p>"Fiz a vitrificação e o carro ficou com um brilho absurdo. Atendimento excelente e resultado profissional."</p>
+          <div class="dep-author">
+            <div class="dep-avatar">AM</div>
+            <div>
+              <strong>Ana M.</strong>
+              <span>Toyota Corolla 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card">
+          <div class="stars">★★★★★</div>
+          <p>"Higienização completa do interior, saiu como novo! Equipe dedicada e muito caprichosa nos detalhes."</p>
+          <div class="dep-author">
+            <div class="dep-avatar">JS</div>
+            <div>
+              <strong>João S.</strong>
+              <span>Jeep Compass 2023</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub">Fale conosco</span>
+        <h2 class="section-title">Contato & <span>Agendamento</span></h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Venha nos visitar</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Endereço</strong>
+              <span>Franca — SP<br>Consulte o endereço pelo WhatsApp</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <strong>Horário de atendimento</strong>
+              <span>Segunda a Sábado: 8h às 18h</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>(16) 9 0000-0000</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div>
+              <strong>Instagram</strong>
+              <span>@mfmestetica</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5516900000000" target="_blank" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+          </a>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="nome">Seu nome</label>
+            <input type="text" id="nome" placeholder="Nome completo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Telefone / WhatsApp</label>
+            <input type="tel" id="tel" placeholder="(16) 9 0000-0000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="servico">Serviço desejado</label>
+            <select id="servico">
+              <option value="">Selecione um serviço...</option>
+              <option>Lavagem Detalhada</option>
+              <option>Polimento</option>
+              <option>Vitrificação</option>
+              <option>Higienização Interna</option>
+              <option>Película PPF</option>
+              <option>Cristalização de Vidros</option>
+              <option>Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" placeholder="Descreva seu veículo e o que precisa..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Enviar mensagem <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          MFM <span>Estética Automotiva</span>
+        </div>
+        <p>Cada detalhe importa. Cada resultado surpreende.</p>
+        <div class="footer-social">
+          <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 MFM Estética Automotiva — Franca, SP. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLOAT ========== -->
+  <a href="https://wa.me/5516900000000" target="_blank" class="whatsapp-float" title="Chamar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    // Menu mobile
+    const menuBtn = document.getElementById('menu-btn');
+    const nav = document.getElementById('nav');
+
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      const icon = menuBtn.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
+    });
+
+    // Fechar menu ao clicar em link
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        const icon = menuBtn.querySelector('i');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-xmark');
+      });
+    });
+
+    // Header com sombra ao rolar
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Formulário: redireciona pro WhatsApp
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nome = document.getElementById('nome').value;
+      const tel = document.getElementById('tel').value;
+      const servico = document.getElementById('servico').value;
+      const msg = document.getElementById('msg').value;
+
+      const texto = `Olá! Gostaria de agendar um serviço.\n\n*Nome:* ${nome}\n*Telefone:* ${tel}\n*Serviço:* ${servico || 'Não informado'}\n*Mensagem:* ${msg || 'Sem mensagem adicional'}`;
+      const url = `https://wa.me/5516900000000?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    });
+
+    // Animação de entrada nos cards
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .dep-card, .about-num-item').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 
 </body>
-
-
-
-
-
-
-
-
 </html>
